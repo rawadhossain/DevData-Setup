@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "roots": {
+    "developerData": "%DEVDataRoot%",
+    "projects": "%ProjectsRoot%",
+    "goSdk": "%DEVDataRoot%\\GoSDK\\go",
+    "goWorkspace": "%DEVDataRoot%\\Go",
+    "python": "%DEVDataRoot%\\Python",
+    "packageManagers": "%DEVDataRoot%\\PackageManagers",
+    "dockerWsl": "%DockerWslRoot%",
+    "ubuntuWsl": "%UbuntuWslRoot%"
+  },
+  "docker": {
+    "enabled": true,
+    "dataRoot": "%DockerWslRoot%",
+    "requireDesktopStopped": true,
+    "relocation": {
+      "enabled": false,
+      "requireOfficialMechanism": true,
+      "preserveOriginal": true,
+      "requireExplicitApproval": true
+    }
+  },
+  "wsl": {
+    "enabled": true,
+    "defaultDistribution": "Ubuntu",
+    "distributions": [
+      {
+        "name": "Ubuntu",
+        "enabled": true,
+        "destination": "%UbuntuWslRoot%",
+        "migration": {
+          "enabled": false,
+          "preserveOriginal": true,
+          "retainExportBackup": true,
+          "requireExplicitApproval": true
+        }
+      }
+    ]
+  },
+  "migration": {
+    "enabled": false,
+    "requireManifest": true,
+    "requireExplicitApproval": true,
+    "preserveSourceBackup": true,
+    "verifyFileHashes": true
+  }
+}

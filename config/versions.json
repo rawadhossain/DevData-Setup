@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "constraints": {
+    "git": { "minimum": null, "maximum": null },
+    "node": { "minimum": null, "maximum": null },
+    "python": { "minimum": null, "maximum": null },
+    "uv": { "minimum": null, "maximum": null },
+    "pnpm": { "minimum": null, "maximum": null },
+    "bun": { "minimum": null, "maximum": null },
+    "go": { "minimum": null, "maximum": null },
+    "docker": { "minimum": null, "maximum": null },
+    "wsl": { "minimum": null, "maximum": null }
+  },
+  "policy": {
+    "enforce": false,
+    "allowNewerVersions": true
+  }
+}

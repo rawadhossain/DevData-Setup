@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "enabled": false,
+  "junctions": [
+    { "id": "profile-agents", "source": "%USERPROFILE%\\.agents", "target": "%DEVDataRoot%\\Profile\\.agents" },
+    { "id": "user-cache", "source": "%USERPROFILE%\\.cache", "target": "%DEVDataRoot%\\Profile\\.cache" },
+    { "id": "profile-caveman", "source": "%USERPROFILE%\\.caveman", "target": "%DEVDataRoot%\\Profile\\.caveman" },
+    { "id": "profile-claude", "source": "%USERPROFILE%\\.claude", "target": "%DEVDataRoot%\\Profile\\.claude" },
+    { "id": "profile-copilot", "source": "%USERPROFILE%\\.copilot", "target": "%DEVDataRoot%\\Profile\\.copilot" },
+    { "id": "profile-cursor", "source": "%USERPROFILE%\\.cursor", "target": "%DEVDataRoot%\\Profile\\.cursor" },
+    { "id": "user-docker", "source": "%USERPROFILE%\\.docker", "target": "%DEVDataRoot%\\Profile\\.docker" },
+    { "id": "profile-gemini", "source": "%USERPROFILE%\\.gemini", "target": "%DEVDataRoot%\\Profile\\.gemini" },
+    { "id": "profile-local", "source": "%USERPROFILE%\\.local", "target": "%DEVDataRoot%\\Profile\\.local" },
+    { "id": "profile-vscode", "source": "%USERPROFILE%\\.vscode", "target": "%DEVDataRoot%\\Profile\\.vscode" },
+    { "id": "profile-vscode-shared", "source": "%USERPROFILE%\\.vscode-shared", "target": "%DEVDataRoot%\\Profile\\.vscode-shared" },
+    { "id": "claude-cli-local", "source": "%USERPROFILE%\\AppData\\Local\\claude-cli-nodejs", "target": "%DEVDataRoot%\\AppData\\Local\\claude-cli-nodejs" },
+    { "id": "copilot-local", "source": "%USERPROFILE%\\AppData\\Local\\copilot", "target": "%DEVDataRoot%\\AppData\\Local\\copilot" },
+    { "id": "cursor-local", "source": "%USERPROFILE%\\AppData\\Local\\Cursor", "target": "%DEVDataRoot%\\AppData\\Local\\Cursor" },
+    { "id": "npm-cache-local", "source": "%USERPROFILE%\\AppData\\Local\\npm-cache", "target": "%DEVDataRoot%\\AppData\\Local\\npm-cache" },
+    { "id": "uv-cache-local", "source": "%USERPROFILE%\\AppData\\Local\\uv", "target": "%DEVDataRoot%\\AppData\\Local\\uv" },
+    { "id": "vscode-roaming", "source": "%USERPROFILE%\\AppData\\Roaming\\Code", "target": "%DEVDataRoot%\\AppData\\Roaming\\Code" },
+    { "id": "cursor-roaming", "source": "%USERPROFILE%\\AppData\\Roaming\\Cursor", "target": "%DEVDataRoot%\\AppData\\Roaming\\Cursor" },
+    { "id": "uv-roaming", "source": "%USERPROFILE%\\AppData\\Roaming\\uv", "target": "%DEVDataRoot%\\AppData\\Roaming\\uv" }
+  ],
+  "policy": {
+    "createMissingTargets": false,
+    "replaceExistingDirectories": false,
+    "requireEmptySource": true,
+    "requireExplicitApproval": true,
+    "verifyTarget": true
+  }
+}

@@ -1,0 +1,21 @@
+# Runtime output
+logs/*
+backups/*
+!logs/.gitkeep
+!backups/.gitkeep
+
+# Local/operator state
+.bootstrap-state/
+*.local.json
+
+# PowerShell and test output
+*.tmp
+*.bak
+TestResults/
+
+# Editor and OS files
+.vscode/
+.idea/
+graphify-out/
+Thumbs.db
+Desktop.ini

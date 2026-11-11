@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "scope": "User",
+  "variables": {
+    "GOBIN": "%DEVDataRoot%\\Go\\bin",
+    "GOCACHE": "%DEVDataRoot%\\Go\\cache",
+    "GOMODCACHE": "%DEVDataRoot%\\Go\\pkg\\mod",
+    "GOPATH": "%DEVDataRoot%\\Go",
+    "GOROOT": "%DEVDataRoot%\\GoSDK\\go",
+    "PIP_CACHE_DIR": "%DEVDataRoot%\\Python\\pip-cache",
+    "PNPM_HOME": "%DEVDataRoot%\\PackageManagers\\pnpm-home",
+    "BUN_INSTALL": "%DEVDataRoot%\\PackageManagers\\.bun",
+    "UV_CACHE_DIR": "%DEVDataRoot%\\Python\\uv-cache",
+    "UV_PYTHON_BIN_DIR": "%DEVDataRoot%\\Python\\uv-bin",
+    "UV_PYTHON_INSTALL_DIR": "%DEVDataRoot%\\Python\\uv-python",
+    "UV_TOOL_BIN_DIR": "%DEVDataRoot%\\Python\\uv-bin",
+    "UV_TOOL_DIR": "%DEVDataRoot%\\Python\\uv-tools"
+  },
+  "packageManagers": {
+    "npm": {
+      "prefix": "%DEVDataRoot%\\PackageManagers\\npm-global",
+      "cache": "%DEVDataRoot%\\PackageManagers\\npm-cache"
+    },
+    "pnpm": {
+      "store-dir": "%DEVDataRoot%\\PackageManagers\\pnpm-store"
+    },
+    "bun": {
+      "BUN_INSTALL": "%DEVDataRoot%\\PackageManagers\\.bun"
+    },
+    "uv": {
+      "cache-dir": "%DEVDataRoot%\\Python\\uv-cache",
+      "python-dir": "%DEVDataRoot%\\Python\\uv-python"
+    }
+  },
+  "path": {
+    "user": [
+      "%DEVDataRoot%\\Python\\uv-bin",
+      "%DEVDataRoot%\\PackageManagers\\npm-global",
+      "%DEVDataRoot%\\PackageManagers\\pnpm-home",
+      "%DEVDataRoot%\\PackageManagers\\.bun\\bin",
+      "%DEVDataRoot%\\GoSDK\\go\\bin",
+      "%DEVDataRoot%\\Go\\bin"
+    ],
+    "machine": []
+  },
+  "policy": {
+    "preserveUnmanagedEntries": true,
+    "removeDuplicates": false,
+    "repairMalformedEntries": false
+  }
+}

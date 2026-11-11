@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "platform": "Windows",
+  "powershellCompatibility": "5.1",
+  "paths": {
+    "DEVDataRoot": "D:\\DevData",
+    "ProjectsRoot": "D:\\Projects",
+    "DockerWslRoot": "D:\\Docker\\wsl",
+    "UbuntuWslRoot": "D:\\WSL\\Ubuntu"
+  },
+  "developerDataRoot": "%DEVDataRoot%",
+  "projectsRoot": "%ProjectsRoot%",
+  "driveCapacity": {
+    "minimumFreeGB": 10
+  },
+  "execution": {
+    "dryRunByDefault": true,
+    "requireExplicitApprovalForDestructive": true,
+    "continueOnError": false
+  },
+  "safety": {
+    "neverReadSecretFiles": true,
+    "createBackupsBeforeMutation": true,
+    "verifyAfterMutation": true,
+    "preserveUnmanagedPathEntries": true
+  },
+  "logging": {
+    "directory": "logs",
+    "level": "Information",
+    "format": "json-lines"
+  }
+}
